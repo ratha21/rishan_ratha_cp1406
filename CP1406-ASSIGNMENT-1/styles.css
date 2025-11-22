@@ -1,0 +1,142 @@
+/*
+Author: Rishan Ratha
+Date: 12 October 2025
+File Name: styles.css
+*/
+
+/* ===== CSS Reset ===== */
+body, header, nav, main, footer, h1, div, img, ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* ===== Body Styling ===== */
+body {
+  background-color: #f4fbff;       /* soft clinic blue */
+  color: #0f3554;                  /* deep dental navy for text */
+  font-family: Verdana, Arial, sans-serif;
+}
+
+header img {
+  margin: 0 auto;
+  max-height: 130px;   /* slightly bigger logo */
+  width: auto;
+  display: block;
+  padding-top: 10px;   /* small vertical spacing */
+}
+
+
+/* ===== Part 3: Mobile nav (remove width/float/margin) ===== */
+nav {
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;           /* center for mobile */
+}
+
+/* replace nav li with EXACT rule requested */
+nav li {
+  font-size: 1.5em;
+  font-family: Verdana, Arial, sans-serif; /* Part 4 will override this for nav */
+  border-top: 1px solid #cde8f7;           /* lighter divider for dental theme */
+}
+
+nav li a {
+  display: block;
+  color: #0f3554;               /* navy text for contrast on white header */
+  text-align: center;
+  padding: 0.75em 1em;          /* a bit more breathing room */
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #dff3ff;    /* gentle hover blue */
+}
+
+/*  Main  */
+main {
+  clear: left;
+  background-color: #ffffff;
+  color: #0f3554;               /* consistent text color */
+  padding: 2%;
+  font-size: 1.1em;             /* slightly tighter for consistency */
+}
+
+/*  Images / Hero */
+img {
+  max-width: 100%;
+  display: block;
+}
+#hero img {
+  width: 100%;
+  height: auto;
+  max-height: 360px;  /* tighter hero height */
+  object-fit: cover;  /* crop gracefully if needed */
+}
+
+
+.mobile { display: block; }
+.tablet-desktop { display: none; }
+
+/*  tel link styles  */
+/*  tel link styles  */
+.tel-link {
+  background-color: #ffffff;   /* was #0b88c2 */
+  padding: 0.9em;
+  margin: 1.2em auto;
+  width: 60%;
+  text-align: center;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  border: 2px solid #0b88c2;   /* added border to keep it button-like */
+}
+
+
+.tel-link a {
+  color: #b1e8f1;
+  text-decoration: none;
+  font-size: 1.6em;
+  font-weight: bold;
+  display: block;
+}
+
+.hours {
+  margin-left: 10%;
+}
+
+/* ===== About Page (Part 6) ===== */
+
+/* updated to new section IDs */
+#orthodontist, #general-dentist, #hygienist, #receptionist { margin: 0 2%; }
+
+/* round class for the image */
+.round { 
+  border-radius: 8px; 
+  max-width: 560px;   /* neater staff photo size */
+  margin: 0 auto;     /* center in the column */
+}
+
+
+
+
+/*  Contact Page  */
+#contact-info { text-align: center; }
+#contact-info a { color: #0b88c2; text-decoration: none; }
+
+/* ===== Call-to-Action  ===== */
+.action {
+  font-size: 1.35em;
+  color: #0b88c2;               /* brand teal for CTAs */
+  font-weight: bold;
+}
+
+/* =====  Google Fonts ===== */
+/* Francois One for nav links */
+nav li { font-family: 'Francois One', sans-serif; }
+/* Roboto Slab for main content */
+main { font-family: 'Roboto Slab', serif; }
